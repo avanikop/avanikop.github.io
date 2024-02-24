@@ -1299,7 +1299,7 @@ input, select, textarea {
 		}
 
 			#header .logo .icon:before {
-				font-size: 12rem;
+				font-size: 2rem;
 			}
 
 		#header .content {
@@ -1441,8 +1441,8 @@ input, select, textarea {
 				}
 
 			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
+				width: 100%;
+				height: auto;
 				line-height: 4.75rem;
 			}
 
