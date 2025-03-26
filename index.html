@@ -83,23 +83,26 @@
 							<article id="zebra-finch">
 								<h2 class="major">Motor control of <br /> learned song</h2>
 								<p>Exploring how juvenile zebra finches learn songs from adult tutors and the neuronal mechanisms involved.</p>
+								<a href="#projects" class="close">Close</a>
 							</article>
 							
 							<article id="bengalese-finch">
 								<h2 class="major">Neuronal basis of <br />
 									complex sequencing</h2>
 								<p>Investigating the flexible song syntax of Bengalese finches and its neural underpinnings.</p>
+								<a href="#projects" class="close">Close</a>
 							</article>
 							
 							<article id="computational-models">
 								<h2 class="major">Modeling syntax hierarchy <br />
 									in song</h2>
 								<p>Using mathematical and computational models to understand song learning and production in birds.</p>
+								<a href="#projects" class="close">Close</a>
 							</article>
 							
 							<script>
 								document.addEventListener("DOMContentLoaded", function() {
-									document.querySelectorAll(".close").forEach(button => {
+									document.querySelectorAll("#zebra-finch .close, #bengalese-finch .close, #computational-models .close").forEach(button => {
 										button.addEventListener("click", function() {
 											window.location.hash = "#projects";
 										});
