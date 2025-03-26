@@ -56,7 +56,6 @@
 								<h2 class="major">Projects</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p> Much like humans, songbirds like zebra finches, Bengalese finches and canaries learn their songs from their tutors. I'm interested in the development of song and the neuronal basis of song sequencing.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							    <div class="project-container">
 									<a href="#zebra-finch">
 										<span class="image"><img src="images/zebra_finch.jpg" alt="Zebra Finch" /></span>
@@ -83,21 +82,27 @@
 							<article id="zebra-finch">
 								<h2 class="major">Zebra Finch Song Learning</h2>
 								<p>Exploring how juvenile zebra finches learn songs from adult tutors and the neuronal mechanisms involved.</p>
-								<a href="#projects" class="close-button">Close</a>
 							</article>
 							
 							<article id="bengalese-finch">
 								<h2 class="major">Bengalese Finch Song Sequencing</h2>
 								<p>Investigating the flexible song syntax of Bengalese finches and its neural underpinnings.</p>
-								<a href="#projects" class="close-button">Close</a>
 							</article>
 							
 							<article id="computational-models">
 								<h2 class="major">Computational Modeling of Song Learning</h2>
 								<p>Using mathematical and computational models to understand song learning and production in birds.</p>
-								<a href="#projects" class="close-button">Close</a>
 							</article>
 							
+							<script>
+								document.addEventListener("DOMContentLoaded", function() {
+									document.querySelectorAll(".close").forEach(button => {
+										button.addEventListener("click", function() {
+											window.location.hash = "#projects";
+										});
+									});
+								});
+							</script>
 							<style>
 							.project-container {
 								text-align: center;
